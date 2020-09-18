@@ -42,5 +42,7 @@ public class PostsRepositoryTest {
         Posts posts = postsList.get(0);
         assertThat(posts.getTitle()).isEqualTo(title);
         assertThat(posts.getContent()).isEqualTo(content);
+        assertThat(posts.getTitle()).isNotEqualTo("테스트 게시글2");
+        assertThat(posts.getContent()).isNotNull();
     }
 }
