@@ -141,5 +141,6 @@ public class PostsApiControllerTest {
         System.out.println(">>>>>>>>>>>> createDate=" + posts.getCreateDate() + ", modifiedDate=" + posts.getModifiedDate());
         assertThat(posts.getCreateDate()).isAfter(now);
         assertThat(posts.getModifiedDate()).isAfter(now);
+        assertThat(posts.getCreateDate()).isNotNull();
     }
 }
